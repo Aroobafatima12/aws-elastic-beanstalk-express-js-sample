@@ -30,7 +30,7 @@
        post {
            failure {
                mail to: 'you@example.com',
-                    subject: "Build failed in Jenkins: $(env.JOB_NAME} ${env.BUILD_NUMBER}"
+                    subject: "Build failed in Jenkins: ${env.JOB_NAME} ${env.BUILD_NUMBER}"
                     body: "Build failed! Check Jenkins for details"
            }
        }
